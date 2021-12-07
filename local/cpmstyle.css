@@ -95,7 +95,6 @@ body {
   height: 60rem;
   width: 20rem;
 } .overlay img {
-  width: 80rem;
+  width: 100%, auto;
   height: 50rem;
-  margin-left: 12rem;
 }
