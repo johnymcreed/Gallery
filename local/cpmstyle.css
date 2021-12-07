@@ -45,6 +45,7 @@ body {
   width: 15rem;
   height: 10rem;
   float: left;
+  opacity: .50;
   margin-right: 30px;
   margin-top; -10px;
   overflow: hidden;
