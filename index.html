@@ -32,6 +32,9 @@
     </div>
     <div class="container margin-gallary">
       <script>
+        var fs = require('fs');
+        var files = fs.readdirSync('/java/images');
+        
         //requiring path and fs modules
         const path = require('path');
         const fs = require('fs');
