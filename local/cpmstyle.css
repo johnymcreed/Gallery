@@ -30,7 +30,7 @@ body {
   background-color: trasnparent;
   border: none;
 } .navbar-collapse .google-search {
-  width: 26rem; 
+  width: 1, auto; 
 }
   
 
