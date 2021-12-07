@@ -31,7 +31,7 @@ body {
   border: none;
 } .navbar-collapse .google-search {
   width: 1, auto; 
-}
+} 
   
 
 /* Gallery */
@@ -60,7 +60,11 @@ body {
   font-size: 12px;
   padding: 7px;
   background-color: rgba(0,0,0,0.9);
-}
+} #loading-img {
+  margin-left: 4rem;
+  margin-top: 4rem;
+  color: white;
+} 
 
 .overlay:target {
   visibility: visible;
