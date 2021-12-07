@@ -46,7 +46,9 @@
             //listing all files using forEach
             files.forEach(function (file) {
                 // Do whatever you want to do with the file
+                document.open();
                 document.write('<div class="box-image"><a href="#img" ><img src="' + file + '" id="blurr-this" class="gll-picture"></a><a href="#_" id="img" class="overlay" ><img class="smaller" src="' + file + '"></a></div>'); 
+                document.close();
             });
         });
       </script>
