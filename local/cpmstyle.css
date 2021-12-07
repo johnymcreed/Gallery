@@ -52,6 +52,7 @@ body {
 } .margin-gallary img {
   width: 100%;
 } #blurr-this {
+  opacity: .50;
   filter: blur(8px);
   -webkit-filter: blur(8px);
 } .description-box {
