@@ -41,7 +41,7 @@
         fs.readdir(directoryPath, function (err, files) {
             //handling error
             if (err) {
-                return document.write('Unable to scan directory: ' + err);
+                return console.log('Unable to scan directory: ' + err);
             } 
             //listing all files using forEach
             files.forEach(function (file) {
