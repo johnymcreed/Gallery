@@ -39,7 +39,6 @@ body {
   margin-top: 2rem;
   color: white;
 } .box-image {
-  opacity: .50;
   padding; 20px;
   background-color: transparent;
   border: 1px solid white;
@@ -65,7 +64,9 @@ body {
   margin-left: 4rem;
   margin-top: 4rem;
   color: white;
-} 
+} #op-1 {
+  opacity: .50;
+}
 
 .overlay:target {
   visibility: visible;
