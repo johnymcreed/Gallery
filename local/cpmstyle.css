@@ -29,6 +29,8 @@ body {
   margin-top: -1px;
   background-color: trasnparent;
   border: none;
+} .navbar-collapse .google-search {
+  width: 26rem; 
 }
   
 
