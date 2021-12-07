@@ -23,9 +23,9 @@ body {
   height: 12px;
   background-color: transparent;
   margin-left: -5px;
-  color: #b44aed;
+  color: black;
 } .gsc-search-button {
-  height: 28px;
+  height: 40px;
   margin-top: -1px;
   background-color: trasnparent;
   border: none;
@@ -52,6 +52,12 @@ body {
 } #blurr-this {
   filter: blur(8px);
   -webkit-filter: blur(8px);
+} .description-box {
+  border: 1px solid white;
+  width: 15rem;
+  font-size: 12px;
+  padding: 7px;
+  background-color: rgba(0,0,0,0.9);
 }
 
 .overlay:target {
@@ -61,9 +67,11 @@ body {
 } .overlay {
   /* Display over the entire page */
   position: fixed;
-  z-index: 99;
+  z-index: 50;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.9);
@@ -77,6 +85,10 @@ body {
   visibility: hidden;
 } .smaller {
   padding: 50px;
-  height: 70rem;
+  height: 60rem;
   width: 20rem;
+} .overlay img {
+  width: 80rem;
+  height: 50rem;
+  margin-left: 15rem;
 }
