@@ -45,12 +45,12 @@ body {
   width: 15rem;
   height: 10rem;
   float: left;
-  opacity: .50;
   margin-right: 30px;
   margin-top; -10px;
   overflow: hidden;
   white-space: nowrap;
 } .margin-gallary img {
+  opacity: .50;
   width: 100%;
 } #blurr-this {
   filter: blur(8px);
