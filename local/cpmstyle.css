@@ -50,7 +50,6 @@ body {
   overflow: hidden;
   white-space: nowrap;
 } .margin-gallary img {
-  opacity: .50;
   width: 100%;
 } #blurr-this {
   filter: blur(8px);
