@@ -16,6 +16,7 @@ a, p, span {color: #e0e0e0;}a:link {color: #ba66ff;text-decoration: none;}a:hove
 } 
 .make-inline {
   float:left;
+  margin-left: 23px;
   margin-top: 3.5rem;
 }
 
@@ -24,14 +25,9 @@ a, p, span {color: #e0e0e0;}a:link {color: #ba66ff;text-decoration: none;}a:hove
   padding: 23px;
   color: white;
 } 
-.margin-gallary .container {
-  margin-left: 20.5rem !important;
-}
-
 .margin-gallary #img {
   width: 15rem;
   height: 10rem;
-  
 } 
 .box-image {
   padding; 20px;
@@ -53,6 +49,7 @@ a, p, span {color: #e0e0e0;}a:link {color: #ba66ff;text-decoration: none;}a:hove
   border: 1px solid #bab8b8;
   width: 15rem;
   font-size: 12px;
+  margin-left: -4.6rem;
   padding: 7px;
   overflow: hidden;
   white-space: nowrap;
@@ -126,6 +123,7 @@ a, p, span {color: #e0e0e0;}a:link {color: #ba66ff;text-decoration: none;}a:hove
   /* only for the script to target */
   position: absolute;
 }
+
 
 /* backup
 html,
