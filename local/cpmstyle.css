@@ -49,11 +49,16 @@ a, p, span {color: #e0e0e0;}a:link {color: #ba66ff;text-decoration: none;}a:hove
   border: 1px solid #bab8b8;
   width: 15rem;
   font-size: 12px;
-  margin-left: -4.6rem;
   padding: 7px;
   overflow: hidden;
   white-space: nowrap;
   background-color: #121111;
+}
+
+@media screen and (max-width: 1000px) {
+  .make-inline {
+    margin-left:30px;
+  }
 }
 
 /* Loader When Img Loads */
@@ -123,6 +128,7 @@ a, p, span {color: #e0e0e0;}a:link {color: #ba66ff;text-decoration: none;}a:hove
   /* only for the script to target */
   position: absolute;
 }
+
 
 
 /* backup
