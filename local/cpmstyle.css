@@ -1,16 +1,10 @@
 /* Background, And Defults */
 html,
 body {
-  background-color:#292828 !important;
-  color: #e0e0e0;
-} a, p, span {
-  color: #e0e0e0; 
-} a:link {
-  color: #ba66ff;
-  text-decoration: none;
-} a:hover {
-  cursor: pointer;
-}
+  background-color:#141414 !important;
+  color: #ededed !important;
+} 
+a, p, span {color: #e0e0e0;}a:link {color: #ba66ff;text-decoration: none;}a:hover {cursor: pointer;} ::selection { background-color: transparent; color: grey;} 
 ::-webkit-scrollbar {width: 10px;}::-webkit-scrollbar-track {background: transparent;}::-webkit-scrollbar-thumb {background: #888;}::-webkit-scrollbar-thumb:hover {background: #555;}
 
 /* Before Body */
@@ -38,7 +32,8 @@ body {
 .box-image {
   padding; 20px;
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid #bab8b8;
+  border-radius: 3px;
   width: 15rem;
   height: 10rem;
   margin-right: 30px;
@@ -52,13 +47,13 @@ body {
   margin-top: 2.7rem;
 } 
 .description-box {
-  border: 1px solid white;
+  border: 1px solid #bab8b8;
   width: 15rem;
   font-size: 12px;
   padding: 7px;
   overflow: hidden;
   white-space: nowrap;
-  background-color: rgba(0,0,0,0.9);
+  background-color: #121111;
 }
 
 /* Loader When Img Loads */
@@ -131,3 +126,133 @@ body {
   filter: blur(0px);
   -webkit-filter: blur(0px);
 }
+
+
+/* backup
+html,
+body {
+  background-color:#292828 !important;
+  color: #e0e0e0;
+} a, p, span {
+  color: #e0e0e0; 
+} a:link {
+  color: #ba66ff;
+  text-decoration: none;
+} a:hover {
+  cursor: pointer;
+}
+::-webkit-scrollbar {width: 10px;}::-webkit-scrollbar-track {background: transparent;}::-webkit-scrollbar-thumb {background: #888;}::-webkit-scrollbar-thumb:hover {background: #555;}
+
+.head-spacer {
+  margin-top: 15px;
+} 
+.container {
+  width: 75rem !important;
+} 
+.make-inline {
+  float:left;
+}  
+
+.margin-gallary {
+  padding: 23px;
+  margin-top: 3rem;
+  color: white;
+} 
+.margin-gallary #img {
+  width: 15rem;
+  height: 10rem;
+  
+} 
+.box-image {
+  padding; 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 15rem;
+  height: 10rem;
+  margin-right: 30px;
+  margin-top; -10px;
+  overflow: hidden;
+  white-space: nowrap;
+} 
+.loader-before {
+  font-size: 33px;
+  padding:12px;
+  margin-top: 2.7rem;
+} 
+.description-box {
+  border: 1px solid white;
+  width: 15rem;
+  font-size: 12px;
+  padding: 7px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: rgba(0,0,0,0.9);
+}
+
+#animated-spinner {
+  font-size: 23px;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+} 
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.gll-picture {
+    transition:transform 1.25s ease;
+} 
+.gll-picture:hover {
+    -webkit-transform:scale(5.5);
+    transform:scale(5.5);
+} 
+.smaller {
+  padding: 50px;
+  height: 60rem;
+  width: 20rem;
+} 
+#img {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+} 
+.un-blur-after {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.img-wrapper::after {
+    font-size: 12px;
+    display: block;
+    white-space: nowrap;
+} 
+#imgViewer img {
+  width: 100%;
+  height: auto;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+.imgViewer {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 1000rem;
+  height:500rem;
+}
+.model {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 1000rem;
+  height:500rem;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+*/
