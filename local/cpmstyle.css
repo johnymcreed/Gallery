@@ -11,91 +11,123 @@ body {
 } a:hover {
   cursor: pointer;
 }
+::-webkit-scrollbar {width: 10px;}::-webkit-scrollbar-track {background: transparent;}::-webkit-scrollbar-thumb {background: #888;}::-webkit-scrollbar-thumb:hover {background: #555;}
 
-/* Navbar */
+/* Before Body */
 .head-spacer {
   margin-top: 15px;
-} .google-search {
-  float:right;
-  width: 40rem;  
-} .gsc-input {
-  border: none;
-  height: 12px;
-  background-color: transparent;
-  margin-left: -5px;
-  color: black;
-} .gsc-search-button {
-  height: 40px;
-  margin-top: -1px;
-  background-color: trasnparent;
-  border: none;
-} .navbar-collapse .google-search {
-  width: 1, auto; 
 } 
-  
+.container {
+  width: 75rem !important;
+} 
+.make-inline {
+  float:left;
+}  
 
 /* Gallery */
 .margin-gallary {
-  margin-top: 2rem;
+  padding: 23px;
+  margin-top: 3rem;
   color: white;
-} .box-image {
+} 
+.margin-gallary #img {
+  width: 15rem;
+  height: 10rem;
+  
+} 
+.box-image {
   padding; 20px;
   background-color: transparent;
   border: 1px solid white;
   width: 15rem;
   height: 10rem;
-  float: left;
   margin-right: 30px;
   margin-top; -10px;
   overflow: hidden;
   white-space: nowrap;
-} .margin-gallary img {
-  width: 100%;
-} #blurr-this {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-} .description-box {
+} 
+.loader-before {
+  font-size: 33px;
+  padding:12px;
+  margin-top: 2.7rem;
+} 
+.description-box {
   border: 1px solid white;
   width: 15rem;
   font-size: 12px;
   padding: 7px;
+  overflow: hidden;
+  white-space: nowrap;
   background-color: rgba(0,0,0,0.9);
-} #loading-img {
-  margin-left: 4rem;
-  margin-top: 4rem;
-  color: white;
-} #op-1 {
-  opacity: .50;
 }
 
-.overlay:target {
-  visibility: visible;
-  outline: none;
-  cursor: default;
-} .overlay {
-  /* Display over the entire page */
-  position: fixed;
-  z-index: 50;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
+/* Loader When Img Loads */
+#animated-spinner {
+  font-size: 23px;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+} 
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
-  /* Horizontal and vertical centering of the image */
-  display: flex;
-  align-items: center;
-  text-align: center;
 
-  /* We hide all this by default */
-  visibility: hidden;
-} .smaller {
+/* animated picture */
+.gll-picture {
+    transition:transform 1.25s ease;
+} 
+.gll-picture:hover {
+    -webkit-transform:scale(5.5); /* or some other value */
+    transform:scale(5.5);
+} 
+.smaller {
   padding: 50px;
   height: 60rem;
   width: 20rem;
-} .overlay img {
-  width: 100%, auto;
-  height: 70rem;
+} 
+#img {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+} 
+.un-blur-after {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+/* Image Preview */
+.img-wrapper::after {
+    font-size: 12px;
+    display: block;
+    white-space: nowrap;
+} 
+#imgViewer img {
+  width: 100%;
+  height: auto;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+.imgViewer {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 1000rem;
+  height:500rem;
+}
+.model {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 1000rem;
+  height:500rem;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
