@@ -12,18 +12,22 @@ a, p, span {color: #e0e0e0;}a:link {color: #ba66ff;text-decoration: none;}a:hove
   margin-top: 15px;
 } 
 .container {
-  width: 75rem !important;
+  width: 65rem !important;
 } 
 .make-inline {
   float:left;
-}  
+  margin-top: 3.5rem;
+}
 
 /* Gallery */
 .margin-gallary {
   padding: 23px;
-  margin-top: 3rem;
   color: white;
 } 
+.margin-gallary .container {
+  margin-left: 20.5rem !important;
+}
+
 .margin-gallary #img {
   width: 15rem;
   height: 10rem;
@@ -36,8 +40,7 @@ a, p, span {color: #e0e0e0;}a:link {color: #ba66ff;text-decoration: none;}a:hove
   border-radius: 3px;
   width: 15rem;
   height: 10rem;
-  margin-right: 30px;
-  margin-top; -10px;
+  margin-right: 75px;
   overflow: hidden;
   white-space: nowrap;
 } 
@@ -99,34 +102,30 @@ a, p, span {color: #e0e0e0;}a:link {color: #ba66ff;text-decoration: none;}a:hove
 /* Image Preview */
 .img-wrapper::after {
     font-size: 12px;
-    display: block;
-    white-space: nowrap;
 } 
 #imgViewer img {
-  width: 100%;
-  height: auto;
+  padding; 20px;
+  background-color: transparent;
+  border: 2px solid #bab8b8;
+  border-radius: 3px;
+  width: 60rem;
+  height: 40rem;
+  margin-top; -15px;
+  margin-left: -16rem;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
   filter: blur(0px);
   -webkit-filter: blur(0px);
-}
+} 
 .imgViewer {
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  width: 1000rem;
-  height:500rem;
+  /* only for the script to target */
+  position: absolute;
 }
-.model {
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  width: 1000rem;
-  height:500rem;
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-}
-
 
 /* backup
 html,
